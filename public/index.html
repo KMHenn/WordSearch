@@ -1,0 +1,64 @@
+<!-- 
+    Word Search
+    Kaitlyn Hennessy
+    kmh319
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Word Search</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    </head>
+    <body>
+        <div id="container-fluid">
+            
+            <!-- Top Row -->
+            <div class="row justify-content-end affix">
+                <div class="col">
+                    <form id="loginform">
+                        <b>User Name:</b> <input type="text" name="loginname" id="loginname"/>
+                        <input type="button" value="Register" id="login"/>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row justify-content-start align-items-start affix">
+                <!-- Puzzle -->
+                <div class="col-sm-7 align-self-starts">
+                    <h3 id="puzzleName"></h3>
+                    <div id="puzzle" style="text-align: center"></div>
+                </div>
+
+                <!-- Leaderboard -->
+                <div class="col-sm-5 align-self-start">
+                    <div id="playerName"></div>
+                    
+                    <h3 style="text-align: center">Leaderboard</h3>
+                    <table id="userlist_tbl" class="center fixed_header">
+                        <tbody id="userlist">
+                            <tr style="text-align: center">
+                                <th id="playerListName">Name</th>
+                                <th id="playerListScore">Score</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row affix">
+                <!-- Submit -->
+                <div class="col-sm-7">
+                    <div id="submit"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
